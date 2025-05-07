@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/produtos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <title>Católica Streetwear - Produtos</title>
+</head>
+<body>
+  <input type="checkbox" id="sidebar-toggle" hidden>
+  <aside class="sidebar">
+    <label for="sidebar-toggle" class="close-btn">&times;</label>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Produtos</a></li>
+      <li><a href="#">Contato</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+  </aside>
+
+  <!-- Header -->
+  <header>
+    <label for="sidebar-toggle" class="menu-btn"><i class="fa-solid fa-bars"></i> MENU</label>
+    <img src="img/logo.png" alt="Logo COMP" class="logo">
+    <div class="header-actions">
+      <a href="#" class="botao-login"><i class="fa-regular fa-user"></i> Login</a>
+      <a href="#" class="botao-carrinho"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="main-content">
+    <!-- Filtro lateral -->
+    <aside class="filtros">
+      <h3>Cores</h3>
+      <!-- filtros de cor -->
+      <div class="cores">
+        <label><input type="checkbox"> Amarelo</label>
+        <label><input type="checkbox"> Azul</label>
+        <label><input type="checkbox"> Preto</label>
+        <!-- adicionar mais -->
+      </div>
+      <h3>Tamanho</h3>
+      <div class="tamanhos">
+        <label><input type="checkbox"> P</label>
+        <label><input type="checkbox"> M</label>
+        <label><input type="checkbox"> G</label>
+        <label><input type="checkbox"> GG</label>
+      </div>
+      <h3>Preço</h3>
+      <div class="precos">
+        <label><input type="checkbox"> Até R$ 100</label>
+        <label><input type="checkbox"> R$ 100 - R$ 200</label>
+        <label><input type="checkbox"> Acima de R$ 200</label>
+      </div>
+    </aside>
+
+    <!-- Lista de produtos -->
+    <section class="produtos">
+      <div class="produto">
+        <img src="img/camisa1.png" alt="Produto 1">
+        <h4>MOLETOM ENG. SOFTWARE</h4>
+        <p class="preco-antigo">R$ 149,90</p>
+        <p class="preco">R$ 106,70</p>
+        <p class="parcelamento">6x R$ 18,33 sem juros</p>
+      </div>
+      <div class="produto">
+        <img src="img/camisa2.png" alt="Produto 2">
+        <h4>MOLETOM NUTRIÇÃO</h4>
+        <p class="preco-antigo">R$ 149,90</p>
+        <p class="preco">R$ 115,43</p>
+        <p class="parcelamento">6x R$ 19,83 sem juros</p>
+      </div>
+      <!-- adicionar mais -->
+    </section>
+  </main>
+</body>
+</html>

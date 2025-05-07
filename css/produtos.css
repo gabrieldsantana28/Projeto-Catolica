@@ -1,0 +1,171 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4B0000; /* vinho */
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header */
+  header {
+    background-color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 80px;
+  }
+  
+  .menu-btn {
+    font-weight: bold;
+    cursor: pointer;
+    color: #4B0000;
+    margin-left: 40px;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .header-actions a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .botao-login {
+    color: #4B0000;
+  }
+  
+  .botao-carrinho {
+    background-color: #4B0000;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  
+  #sidebar-toggle:checked ~ .sidebar {
+    left: 0;
+  }
+  
+  .sidebar .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    text-align: left;
+    color: #4B0000;
+    font-weight: bold;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .sidebar ul li a {
+    text-decoration: none;
+    display: block;
+    color: #4B0000;
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  
+  /* Conteúdo principal */
+  .main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Filtros */
+  .filtros {
+    margin-top: -20px;
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    flex-shrink: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filtros h3 {
+    margin-top: 0;
+    color: #4B0000;
+  }
+  
+  .filtros label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  /* Produtos */
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .produto {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .produto img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .produto h4 {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #4B0000;
+  }
+  
+  .preco-antigo {
+    text-decoration: line-through;
+    color: gray;
+    margin: 0;
+  }
+  
+  .preco {
+    color: black;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .parcelamento {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
